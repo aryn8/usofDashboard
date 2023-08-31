@@ -39,7 +39,7 @@ projectData.forEach(item => total += item.totalTime);
 
 
 export const barChartBoxProject = {
-  title: "Project TIS (Secs)",
+  title: "Total Interruption in Seconds per Project",
   color: "#8884d8",
   grandTotal: total,
   projectData,
@@ -86,7 +86,7 @@ categoryData.forEach(item => categoryTotal += item.totalTime);
 
 
 export const barChartBoxCategory = {
-  title: "Category TIS (Secs)",
+  title: "Total Interruption in Seconds per Category",
   color: "#FF8042",
   grandTotal: categoryTotal,
   categoryData,
