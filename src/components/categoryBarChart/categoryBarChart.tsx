@@ -6,8 +6,6 @@ type Props = {
   color: string;
   grandTotal: number | string,
   categoryData: object[];
-  
-  
 };
 
 const CategoryBarChart = (props: Props) => {

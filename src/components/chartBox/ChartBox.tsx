@@ -12,12 +12,10 @@ type Props = {
   percentage: number;
   chartData: object[];
   stateCountArray: object[];
-
 };
 
  const ChartBox = (props: Props) => {
 
-  
    return (
       <div className="stateCount">
         <h1 className="title">{props.title}</h1>
@@ -48,7 +46,6 @@ type Props = {
       />
     </RadarChart>
         </div>
-       
       </div>
    );
  };

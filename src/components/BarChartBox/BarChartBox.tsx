@@ -5,10 +5,7 @@ type Props = {
   title: string;
   color: string;
   grandTotal: number | string,
-  //chartData: object[];
   projectData: object[];
-  
-  
 };
 
 const BarChartBox = (props: Props) => {
@@ -28,8 +25,7 @@ const BarChartBox = (props: Props) => {
             labelStyle={{ display: "none" }}
             cursor={{fill:"none"}}
             />
-            <Bar dataKey="totalTime" fill= {props.color}/>
-            
+            <Bar dataKey="totalTime" fill= {props.color}/> 
           </BarChart>
         </ResponsiveContainer> 
       </div>

@@ -1,6 +1,6 @@
 import { sampleOutage } from './sampleOutage.ts';
 
-// Project/TIS
+// Project/TIS---------------------------------------------------------------------------------------------------------
 interface OutageDataItem {
     project: string;
     tisSecs: string;
@@ -47,9 +47,7 @@ export const barChartBoxProject = {
 
 
 
-
-
-// Category/TIS
+// Category/TIS-------------------------------------------------------------------------------------------------------------
 interface categoryOutageDataItem {
     category: string;
     tisSecs: string;
@@ -90,7 +88,6 @@ categoryData.forEach(item => categoryTotal += item.totalTime);
 export const barChartBoxCategory = {
   title: "Category TIS (Secs)",
   color: "#FF8042",
-  //dataKey: "visit",
   grandTotal: categoryTotal,
   categoryData,
 };
@@ -100,7 +97,7 @@ export const barChartBoxCategory = {
 
 
 
-// State/Count of Outages
+// State/Count of Outages-----------------------------------------------------------------------------------------------------
 
 
 // interface OutageData {
@@ -146,7 +143,7 @@ export { sampleOutage };
 
 
 
-//Compliance Table Less than 98
+//Compliance Table Less than 98% -------------------------------------------------------------------------------------------------
 
 interface tableOutageDataItem {
   siteID: string;
@@ -206,7 +203,7 @@ for (const siteID in siteTotalTimeMap) {
 
 
 
-// Compliance data 98 - 99
+// Compliance data 98% - 99%----------------------------------------------------------------------------------------------------
 
 interface tableOutageDataItem {
   siteID: string;

@@ -11,7 +11,6 @@ interface TableProps {
   data: SiteDataItem[];
 }
 
-
 const ComplianceTable: React.FC<TableProps> = ({ data }) => {
   return (
     <div className="complianceTable">
